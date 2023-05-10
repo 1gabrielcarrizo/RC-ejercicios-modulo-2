@@ -3,8 +3,7 @@ const text = document.getElementById("text")
 
 if(nombre === "" || !isNaN(nombre)){
     alert("Se ingreso una cadena vacia, digitos o se cancelo")
-}
-if(nombre){
+}else{
     alert(`Hola ${nombre}`)
 }
 
