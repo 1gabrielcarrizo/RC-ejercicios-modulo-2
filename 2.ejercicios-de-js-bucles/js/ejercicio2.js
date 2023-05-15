@@ -9,7 +9,6 @@ if (isNaN(nota)) {
         case 1:
         case 2:
     text.textContent = `El valor introducido es ${nota} por lo tanto la nota es MUY DEFICIENTE`
-
             break;
         case 3:
         case 4:

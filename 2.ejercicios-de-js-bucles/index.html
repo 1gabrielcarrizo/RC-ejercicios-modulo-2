@@ -10,13 +10,29 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/1d4e9027fc.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body class="dark">
     <header>
-        <nav class="navbar navbar-light bg-light">
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">Bucles</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="toggle-theme d-flex align-items-center ml-auto" id="toggle-theme">
+                    <div>
+                        <i class="fa-regular fa-moon mr-2" id="toggle-icon"></i>
+                    </div>
+                    <div>
+                        <p class="toggle-theme__text mb-0" id="toggle-text">Dark mode</p>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -30,7 +46,7 @@
                             <p class="card-text text-truncate">1- Escribir un programa que solicite la edad y si es mayor de 18 años mostrar un mensaje que ya puede conducir, si la edad ingresada no es un número válido indicarlo en un mensaje.</p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio1.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio1.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
@@ -42,7 +58,7 @@
                             <p class="card-text text-truncate">2- Escribir un programa que solicite una nota (número) de 0 a 10. Luego mostrar la calificación en un alert según los siguientes rangos de nota:</p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio2.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio2.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +72,7 @@
                                 Nota: usar confirm() https://www.w3schools.com/jsref/met_win_confirm.asp</p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio3.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio3.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
@@ -68,7 +84,7 @@
                             <p class="card-text text-truncate">4- Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo números. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.</p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio4.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio4.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
@@ -96,7 +112,7 @@
                                 </p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio5.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio5.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
@@ -117,7 +133,7 @@
                                 </p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio6.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio6.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
@@ -138,7 +154,7 @@
                                 </p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio7.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio7.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
@@ -159,7 +175,7 @@
                                 </p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio8.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio8.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
@@ -185,7 +201,7 @@
                                 </p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio9.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio9.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
@@ -198,7 +214,7 @@
                             </p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio10.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio10.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
@@ -212,7 +228,7 @@
                                 Nota: ver funcion Math() <a href="https://www.w3schools.com/js/js_math.asp">https://www.w3schools.com/js/js_math.asp</a></p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio11.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio11.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
@@ -224,7 +240,7 @@
                             <p class="card-text text-truncate">12- Realiza un script que genere un número aleatorio entre 1 y 99</p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio12.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio12.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
@@ -236,7 +252,7 @@
                             <p class="card-text text-truncate">13- Realiza un script que pida un texto y lo muestre en mayúsculas.</p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio13.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio13.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
@@ -248,7 +264,7 @@
                             <p class="card-text text-truncate">14- Realiza un script que pida una cadena de texto y lo muestre poniendo el signo – entre cada carácter sin usar el método replace. Por ejemplo, si tecleo “hola qué tal”, deberá salir “h-o-l-a- -q-u-e- -t-a-l”.</p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio14.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio14.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
@@ -260,7 +276,7 @@
                             <p class="card-text text-truncate">15- Realiza un script que cuente el número de vocales que tiene un texto.</p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio15.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio15.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
@@ -272,7 +288,7 @@
                             <p class="card-text text-truncate">16- Realiza un script que pida una cadena de texto y la devuelva al revés. Es decir, si tecleo “hola que tal” deberá mostrar “lat euq aloh”.</p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio16.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio16.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
@@ -293,14 +309,14 @@
                                 </p>
                         </div>
                         <div class="card-body">
-                            <a href="pages/ejercicio17.html" class="btn btn-primary">Ver mas</a>
+                            <a href="pages/ejercicio17.html" class="btn btn-outline-light">Ver mas</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="py-3 text-center bg-light">
+    <footer id="footer" class="py-3 text-center bg-dark">
         <p class="footer py-0 my-0" id="footer"></p>
     </footer>
 
