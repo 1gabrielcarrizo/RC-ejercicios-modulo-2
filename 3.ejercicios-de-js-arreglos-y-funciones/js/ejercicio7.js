@@ -1,31 +1,32 @@
-let number = parseInt(prompt('Ingrese un numero entre [1-50]'))
 const text = document.getElementById("text")
-const bntShow = document.getElementById("bntShow")
-const showContainer = document.getElementById("showContainer")
+const tableBody = document.getElementById("table_body")
+const btnShow = document.getElementById("btnShow")
 
-const showText = () => {
+const tablaMultiplicar = (numero) => {
+    for (let i = 0; i < 10; i++) {
+        let tr = document.createElement("TR")
+        let celda = `<td scope="row">${numero}</td>
+        <td scope="row">x</td>
+        <td scope="row">${i + 1}</td>
+        <td scope="row">=</td>
+        <td scope="row">${numero * (i + 1)}</td>`
+        tr.innerHTML = celda
+        tableBody.appendChild(tr)
+    }
+}
+
+const mostrarEjercicio = () => {
     if (showContainer.style.display === 'none') {
         showContainer.style.display = 'block'
-        bntShow.textContent = "Ocultar ejercicio"
+        btnShow.textContent = "Ocultar ejercicio"
+
+        const number = parseInt(prompt("Ingresar un numero para ver su tabla de multiplicar"))
+        isNaN(number) ? text.textContent = "El valor ingresado no es un numero" : tablaMultiplicar(number)
     } else {
         showContainer.style.display = 'none';
-        bntShow.textContent = 'Mostrar ejercicio';
+        btnShow.textContent = 'Mostrar ejercicio';
+        tableBody.innerHTML = ""
     }
 }
 
-if (isNaN(number)) {
-    text.textContent = 'El valor ingresado no es un numero'
-} else if (number < 1 || number > 50) {
-    text.textContent = 'El numero ingresado no se encuentra en el rango de [1-50]'
-} else {
-    for (let i = number; i >= 1; i--) {
-        for (let j = number; j >= 1; j--) {
-            if (j <= i){
-                text.innerHTML += i
-            }
-        }
-        text.innerHTML += '<br>'
-    }
-}
-
-bntShow.addEventListener("click", showText)
+btnShow.addEventListener("click", mostrarEjercicio)

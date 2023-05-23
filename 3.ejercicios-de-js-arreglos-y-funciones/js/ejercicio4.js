@@ -1,13 +1,23 @@
-let num
-let acumulador = 0
 const text = document.getElementById("text")
+const btnShow = document.getElementById("btnShow")
+const showContainer = document.getElementById("showContainer")
 
-while (confirm('Quiere ingresar un numero?')) {
-    num = parseInt(prompt('Ingrese un numero por favor'))
-    if (isNaN(num)) {
-        alert('El valor ingresado no es un numero')
+const parOImpar = (numero) => {
+    numero % 2 === 0 ? text.textContent = `"${numero}" es par` : text.textContent = `"${numero}" es impar`
+}
+
+const mostrarEjercicio = () => {
+    if (showContainer.style.display === 'none') {
+        showContainer.style.display = 'block'
+        btnShow.textContent = "Ocultar ejercicio"
+        
+        const number = parseInt(prompt("Ingresar un numero para saber si par o impar"))
+        isNaN(number) ? text.textContent = 'El valor ingresado no es un numero' : parOImpar(number)
     } else {
-        acumulador += num
+        showContainer.style.display = 'none';
+        btnShow.textContent = 'Mostrar ejercicio';
+        text.innerHTML = ""
     }
 }
-text.textContent = `La suma total es ${acumulador}`
+
+btnShow.addEventListener("click", mostrarEjercicio)

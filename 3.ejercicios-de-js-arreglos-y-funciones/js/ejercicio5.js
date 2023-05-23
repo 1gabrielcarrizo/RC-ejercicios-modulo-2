@@ -1,13 +1,28 @@
-const letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'];
 const text = document.getElementById("text")
+const btnShow = document.getElementById("btnShow")
+const showContainer = document.getElementById("showContainer")
 
-while (confirm('Quiere ingresar un DNI?')) {
-    const dni = prompt('Introduce tu DNI');
-    if (isNaN(parseInt(dni))) {
-        alert('El valor ingresado no es un numero')
-    } else if (dni.length == 8 && parseInt(dni) > 0) {
-        text.innerHTML += `Tu DNI completo es ${dni}-${letras[dni % 23]}` + '<br>' 
+const info = (string) => {
+    if (string === string.toUpperCase()) {
+        return text.textContent = `"${string}" esta formada por MAYUSCULAS`
+    } else if (string === string.toLowerCase()) {
+        return text.textContent = `"${string}" esta formada por MINUSCULAS`
+    }
+    return text.textContent = `"${string}" esta formada por MAYUSCULAS y MINUSCULAS`
+}
+
+const mostrarEjercicio = () => {
+    if (showContainer.style.display === 'none') {
+        showContainer.style.display = 'block'
+        btnShow.textContent = "Ocultar ejercicio"
+
+        const cadena = prompt("Ingresar una cadena de texto")
+        isNaN(cadena) ? info(cadena) : text.textContent = `El valor ingresado no contiene caracteres`
     } else {
-        alert('El numero de DNI tiene que tener 8 digitos y tiene que ser mayor que 0 y menor que 99999999')
+        showContainer.style.display = 'none';
+        btnShow.textContent = 'Mostrar ejercicio';
+        text.innerHTML = ""
     }
 }
+
+btnShow.addEventListener("click", mostrarEjercicio)

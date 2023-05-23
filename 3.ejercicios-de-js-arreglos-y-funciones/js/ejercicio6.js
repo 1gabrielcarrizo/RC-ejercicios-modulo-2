@@ -1,24 +1,27 @@
 const text = document.getElementById("text")
-const bntShow = document.getElementById("bntShow")
+const btnShow = document.getElementById("btnShow")
 const showContainer = document.getElementById("showContainer")
 
-const showText = () => {
+
+const perimetroRectangulo = (b, h) => {
+    let p = 2 * (b + h)
+    return text.textContent = `El perimetro del rectangulo con base "${b}" y altura "${h}" es: "${p}"`
+}
+
+const mostrarEjercicio = () => {
     if (showContainer.style.display === 'none') {
         showContainer.style.display = 'block'
-        bntShow.textContent = "Ocultar ejercicio"
+        btnShow.textContent = "Ocultar ejercicio"
+        
+        const base = parseInt(prompt("Ingresar la base del rectangulo"))
+        const altura = parseInt(prompt("Ingresar la altura del rectangulo"))
+
+        !isNaN(base) && !isNaN(altura) ? perimetroRectangulo(base, altura) : text.textContent = `1 o los 2 valores no son numeros`
     } else {
         showContainer.style.display = 'none';
-        bntShow.textContent = 'Mostrar ejercicio';
+        btnShow.textContent = 'Mostrar ejercicio';
+        text.innerHTML = ""
     }
 }
 
-for (let i = 1; i <= 30; i++) {
-    for (let j = 1; j <= 30; j++) {
-        if (j <= i) {
-            text.innerHTML += i
-        }
-    }
-    text.innerHTML += '<br>'
-}
-
-bntShow.addEventListener("click", showText)
+btnShow.addEventListener("click", mostrarEjercicio)
