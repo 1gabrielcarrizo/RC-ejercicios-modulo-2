@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/1d4e9027fc.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body class="dark">
+    <header>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">POO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="toggle-theme d-flex align-items-center ml-auto" id="toggle-theme">
+                    <div>
+                        <i class="fa-regular fa-moon mr-2" id="toggle-icon"></i>
+                    </div>
+                    <div>
+                        <p class="toggle-theme__text mb-0" id="toggle-text">Dark mode</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5 text-center">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card h-100">
+                        <img src="assets/img/ss1.png" class="card-img-top" alt="ss1">
+                        <div class="card-body">
+                            <h5 class="card-title">Ejercicio 1</h5>
+                            <p class="card-text text-truncate">1- Crea un objeto llamado auto que tenga algunas características como el color, marca, modelo y si está encendido o apagado. Crea los métodos necesarios para permitir encender y apagar el auto.</p>
+                        </div>
+                        <div class="card-body">
+                            <a href="pages/ejercicio1.html" class="btn btn-outline-light">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card h-100">
+                        <img src="assets/img/ss2.png" class="card-img-top" alt="ss2">
+                        <div class="card-body">
+                            <h5 class="card-title">Ejercicio 2</h5>
+                            <p class="card-text text-truncate">2-Escribe un programa que cree un objeto "cuenta" con las siguientes propiedades:
+                                Una propiedad titular con el valor "Alex".
+                                Una propiedad saldo, teniendo como valor inicial 0.
+                                Un método ingresar() que permita añadir dinero a la cuenta, pasando la cantidad como parámetro
+                                Un método extraer() que permita retirar la cantidad pasada como parámetro.
+                                Un método informar() que retorne la información del estado de la cuenta. 
+                                
+                                Utiliza este objeto para mostrar la descripción, ingresar y extraer dinero y volver a mostrar la descripción del estado de la cuenta.
+                                </p>
+                        </div>
+                        <div class="card-body">
+                            <a href="pages/ejercicio2.html" class="btn btn-outline-light">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card h-100">
+                        <img src="assets/img/ss3.png" class="card-img-top" alt="ss3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ejercicio 3</h5>
+                            <p class="card-text text-truncate">3-Escribe una clase que permita crear distintos objetos “rectángulos”, con las propiedades de alto y ancho, mas los métodos necesarios para modificar y mostrar sus propiedades, calcular el perímetro y el área.</p>
+                        </div>
+                        <div class="card-body">
+                            <a href="pages/ejercicio3.html" class="btn btn-outline-light">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card h-100">
+                        <img src="assets/img/ss4.png" class="card-img-top" alt="ss4">
+                        <div class="card-body">
+                            <h5 class="card-title">Ejercicio 4</h5>
+                            <p class="card-text text-truncate">4- Escribe una clase Producto para crear objetos. Estos objetos, deben presentar las propiedades código, nombre y precio, además del método imprime datos, el cual escribe por pantalla los valores de sus propiedades.
+                                Posteriormente, cree tres instancias de este objeto y guárdalas en un array.
+                                Por último, utilice el método imprime datos para mostrar por pantalla los valores de los tres objetos instanciados.</p>
+                        </div>
+                        <div class="card-body">
+                            <a href="pages/ejercicio4.html" class="btn btn-outline-light">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card h-100">
+                        <img src="assets/img/ss5.png" class="card-img-top" alt="ss5">
+                        <div class="card-body">
+                            <h5 class="card-title">Ejercicio 5</h5>
+                            <p class="card-text text-truncate">5- Crea una clase llamada Persona que siga las siguientes condiciones:
+                                Sus propiedades son: nombre, edad, DNI, sexo (H hombre, M mujer), peso y altura, año de nacimiento. Si quieres añadir alguna propiedad extra puedes hacerlo.
+                                Los métodos que se debe poder utilizar  son:
+                                mostrarGeneracion: este método debe mostrar un mensaje indicando a qué generación pertenece la persona creada y cual es el rasgo característico de esta generación.
+                                Para realizar este método tener en cuenta la siguiente tabla de generaciones:</p>
+                        </div>
+                        <div class="card-body">
+                            <a href="pages/ejercicio5.html" class="btn btn-outline-light">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card h-100">
+                        <img src="assets/img/ss6.png" class="card-img-top" alt="ss6">
+                        <div class="card-body">
+                            <h5 class="card-title">Ejercicio 6</h5>
+                            <p class="card-text text-truncate">6- Crear una clase Libro que contenga al menos las siguientes propiedades:
+                                ISBN
+                                Título
+                                Autor
+                                Número de páginas
+                                
+                                Crear sus respectivos métodos get y set correspondientes para cada propiedad. Crear el método mostrarLibro() para mostrar la información relativa al libro con el siguiente formato:
+                                
+                                “El libro xxx con ISBN xxx creado por el autor xxx tiene páginas xxx”.</p>
+                        </div>
+                        <div class="card-body">
+                            <a href="pages/ejercicio6.html" class="btn btn-outline-light">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card h-100">
+                        <img src="assets/img/ss7.png" class="card-img-top" alt="ss7">
+                        <div class="card-body">
+                            <h5 class="card-title">Ejercicio 7</h5>
+                            <p class="card-text text-truncate">7- Nos piden realizar una agenda telefónica de contactos.
+
+                                Un contacto está definido por un nombre y un teléfono. Se considera que un contacto es igual a otro cuando sus nombres son iguales.
+                                
+                                Una agenda de contactos está formada por un conjunto de contactos. Se podrá crear de dos formas, indicando nosotros el tamaño o con un tamaño por defecto (10).
+                                
+                                Los métodos de la agenda serán los siguientes:
+                                
+                                aniadirContacto(Contacto): Añade un contacto a la agenda, sino la agenda no puede almacenar más contactos indicar por pantalla.
+                                existeContacto(Contacto): indica si el contacto pasado existe o no.
+                                listarContactos(): Lista toda la agenda
+                                buscarContacto(nombre): busca un contacto por su nombre y muestra su teléfono.
+                                eliminarContacto(Contacto c): elimina el contacto de la agenda, indica si se ha eliminado o no por pantalla
+                                agendaLlena(): indica si la agenda está llena.
+                                huecosLibres(): indica cuántos contactos más podemos ingresar.
+                                
+                                Crea un menú con opciones que serán seleccionadas por el usuario usando un prompt, las salidas de las operaciones seleccionadas por el usuario se pueden mostrar en pantalla y  por consola.</p>
+                        </div>
+                        <div class="card-body">
+                            <a href="pages/ejercicio7.html" class="btn btn-outline-light">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card h-100">
+                        <img src="assets/img/ss7.png" class="card-img-top" alt="ss8">
+                        <div class="card-body">
+                            <h5 class="card-title">Ejercicio 8</h5>
+                            <p class="card-text text-truncate">8- Crea una clase llamada "Persona" que tenga las propiedades "nombre", "edad" y "profesión", y los métodos "saludar" y "despedirse". Luego, crea dos objetos de la clase "Persona" con diferentes valores para sus propiedades y llama a sus métodos "saludar" y "despedirse".</p>
+                        </div>
+                        <div class="card-body">
+                            <a href="pages/ejercicio8.html" class="btn btn-outline-light">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card h-100">
+                        <img src="assets/img/ss7.png" class="card-img-top" alt="ss9">
+                        <div class="card-body">
+                            <h5 class="card-title">Ejercicio 9</h5>
+                            <p class="card-text text-truncate">9- Crea una clase llamada "Animal" que tenga las propiedades "nombre" y "edad", y el método "emitirSonido". Luego, crea dos clases hijas llamadas "Perro" y "Gato" que hereden de "Animal" y tengan su propio método "emitirSonido". Finalmente, crea dos objetos, uno de la clase "Perro" y otro de la clase "Gato", y llama a sus métodos "emitirSonido" para verificar que cada animal emite el sonido adecuado.</p>
+                        </div>
+                        <div class="card-body">
+                            <a href="pages/ejercicio9.html" class="btn btn-outline-light">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card h-100">
+                        <img src="assets/img/ss7.png" class="card-img-top" alt="ss10">
+                        <div class="card-body">
+                            <h5 class="card-title">Ejercicio 10</h5>
+                            <p class="card-text text-truncate">10- crear una clase aeropuerto con las propiedades nombreAeropuerto y lista de aviones, esta clase deberá contener el método agregarAvion, el cual recibirá un objeto de tipo Avión, además de un método buscarAvion el cual recibirá el nombre de un avión y devolverá información en caso de encontrarlo, si no lo encontró indicar con un mensaje.
+                                Por su parte los aviones tendrán las propiedades: nombre, capacidad, destino, lista de pasajeros. Los aviones tienen el método abordar el cual permite que un pasajero suba al avión solo si hay capacidad disponible en el mismo, caso contrario mostrar un mensaje que indique que el avión está lleno.
+                                
+                                Crear un objeto de tipo aeropuerto llamado "Aeropuerto Internacional", crear 3 objetos aviones con diferentes destinos. Agregar los 3 aviones al aeropuerto, buscar un avión y usar el método abordar.</p>
+                        </div>
+                        <div class="card-body">
+                            <a href="pages/ejercicio10.html" class="btn btn-outline-light">Ver mas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="py-3 px-2 text-center bg-dark">
+        <p class="footer py-0 my-0" id="footer"></p>
+    </footer>
+
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <!-- my script -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
